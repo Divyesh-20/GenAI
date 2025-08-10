@@ -66,9 +66,9 @@ Each service runs independently and communicates via REST endpoints.
 3. **Run each component** (in separate terminals):
 
    ```bash
-   cd shortGen && venv/Scripts/activate python app.py
-   cd ../aivideogen && venv/Scripts/activate python app.py
-   cd ../aizoom && venv/Scripts/activate python app.py
+   cd shortGen && venv/Scripts/activate &&  python app.py
+   cd ../aivideogen && venv/Scripts/activate &&  python app.py
+   cd ../aizoom && venv/Scripts/activate &&  python app.py
    cd ../ui && npm run dev
    ```
 
