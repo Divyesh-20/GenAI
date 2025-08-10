@@ -1,14 +1,14 @@
-# AudiAI
+# GenAI
 
 **AI-Powered Video Editing & Content Generation Platform**
 
-Built in **24 hours** during a hackathon, AudiAI won **1st place**, a **₹30,000 prize**, and judges offered internships and explored launching their own AI startup with us.
+Built in **24 hours** during a hackathon, GenAI won **1st place**, a **₹30,000 prize**, and judges offered internships and explored launching their own AI startup with us.
 
 ---
 
 ## 🚀 Overview
 
-AudiAI is a modular toolset for content creators:
+GenAI is a modular toolset for content creators:
 
 * **shortGen/** – Automatically extracts short highlights from long-form videos and uploads them to YouTube.
 * **aivideogen/** – Generates AI-driven video snippets from text prompts, including audio, captions, and rendering.
@@ -49,14 +49,7 @@ Each service runs independently and communicates via REST endpoints.
 
 ## 🛠️ Installation & Setup
 
-1. **Clone the repo**
-
-   ```bash
-   git clone https://github.com/BrawlerXull/AudiAI.git
-   cd AudiAI
-   ```
-
-2. **Install dependencies**
+1. **Install dependencies**
 
    ```bash
    pip install -r shortGen/requirements.txt
@@ -65,17 +58,17 @@ Each service runs independently and communicates via REST endpoints.
    npm install --prefix ui
    ```
 
-3. **Configure environment**
+2. **Configure environment**
 
    * Copy `.env.example` in `aivideogen/` and fill in API keys.
    * Place `cred.json` (YouTube credentials) and `youtube_token.pickle` in `shortGen/`.
 
-4. **Run each component** (in separate terminals):
+3. **Run each component** (in separate terminals):
 
    ```bash
-   cd shortGen && python app.py
-   cd ../aivideogen && python app.py
-   cd ../aizoom && python app.py
+   cd shortGen && venv/Scripts/activate python app.py
+   cd ../aivideogen && venv/Scripts/activate python app.py
+   cd ../aizoom && venv/Scripts/activate python app.py
    cd ../ui && npm run dev
    ```
 
